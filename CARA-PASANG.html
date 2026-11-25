@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cara Memasang — UINSU Google Scholar Insight</title>
+<link rel="icon" href="icons/icon48.png" />
+<style>
+  :root { --bg: #f4f7f5; --card: #fff; --ink: #0f3b2c; --ink2: #4b6157; --line: #dfe7e2; --green: #0f7a52; --gold: #f2b63d; --soft: #e9f4ee; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { background: linear-gradient(135deg, #0f3b2c, #11573c 55%, #12915f); color: #fff; padding: 22px 0; }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 0 20px; }
+  header .wrap { display: flex; align-items: center; gap: 14px; }
+  header img { width: 62px; height: 44px; object-fit: contain; }
+  header b { display: block; font-size: 19px; }
+  header span { font-size: 13px; opacity: .88; }
+  h1 { font-size: 26px; margin: 28px 0 6px; }
+  h2 { font-size: 19px; margin: 30px 0 8px; padding-bottom: 6px; border-bottom: 2px solid var(--gold); }
+  p { margin: 0 0 10px; }
+  code { font: 14px Consolas, "Courier New", monospace; background: var(--soft); padding: 1px 6px; border-radius: 4px; }
+  ol.steps { list-style: none; counter-reset: st; padding: 0; margin: 16px 0; }
+  ol.steps > li { counter-increment: st; position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px 14px 60px; margin-bottom: 10px; }
+  ol.steps > li::before { content: counter(st); position: absolute; left: 16px; top: 14px; width: 30px; height: 30px; border-radius: 50%; background: var(--ink); color: #fff; font-weight: 700; display: grid; place-items: center; }
+  ol.steps b { display: block; margin-bottom: 2px; }
+  .note { border-left: 4px solid var(--green); background: var(--soft); padding: 10px 14px; border-radius: 0 8px 8px 0; margin: 12px 0; }
+  .note.warn { border-color: var(--gold); background: #fff8e3; }
+  .mock { border: 1px solid #cfd6e3; border-radius: 9px; overflow: hidden; font-size: 13px; margin: 10px 0 4px; background: #fff; color: #232b3d; }
+  .mock .addr { background: #eef1f6; padding: 7px 12px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #d9deea; }
+  .mock .addr i { width: 9px; height: 9px; border-radius: 50%; background: #c7cedb; }
+  .mock .addr span { flex: 1; background: #fff; border-radius: 12px; padding: 3px 12px; font-family: Consolas, monospace; }
+  .mock .row { display: flex; align-items: center; gap: 9px; padding: 10px 14px; border-bottom: 1px solid #e6e9f0; }
+  .mock .row b { flex: 1; font-size: 16px; display: block; margin: 0; }
+  .mock .pill { border: 1px solid #c7cedb; border-radius: 14px; padding: 4px 13px; color: #1a56c4; font-weight: 600; position: relative; }
+  .mock .hl { box-shadow: 0 0 0 3px var(--gold); }
+  .mock .tag { position: absolute; top: -11px; right: -11px; width: 20px; height: 20px; border-radius: 50%; background: var(--ink); color: #fff; font: 700 12px/20px system-ui; text-align: center; }
+  .mock .tog { display: inline-flex; align-items: center; gap: 8px; position: relative; border-radius: 12px; padding: 3px 8px; }
+  .mock .tog em { width: 30px; height: 15px; border-radius: 8px; background: #8ab4f8; position: relative; display: inline-block; }
+  .mock .tog em::after { content: ""; position: absolute; right: -2px; top: -2px; width: 19px; height: 19px; border-radius: 50%; background: #1a73e8; }
+  .mock .ext { margin: 12px 14px; border: 1px solid #dfe4ee; border-radius: 8px; padding: 10px 12px; display: flex; gap: 12px; align-items: center; max-width: 440px; }
+  .mock .ext img { width: 36px; height: 36px; border-radius: 8px; }
+  .mock .ext b { display: block; margin: 0; }
+  .small { font-size: 13.5px; color: var(--ink2); }
+  footer { margin-top: 34px; padding: 18px 0 28px; border-top: 1px solid var(--line); font-size: 14px; color: var(--ink2); }
+  footer b { color: var(--ink); }
+  @media print { header { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+</style>
+</head>
+<body>
+<header><div class="wrap"><img src="icons/logo-uinsu-putih.png" alt="Logo UINSU" /><div><b>UINSU Google Scholar Insight</b><span>Universitas Islam Negeri Sumatera Utara</span></div></div></header>
+<div class="wrap">
+  <h1>Cara memasang ekstensi</h1>
+  <p>Enam langkah, sekitar dua menit. Yang dibutuhkan hanya Google Chrome atau Microsoft Edge versi 116 atau lebih baru di komputer atau laptop. Ekstensi tidak berjalan di ponsel.</p>
+
+  <ol class="steps">
+    <li><b>Ekstrak berkas ZIP ke folder yang tetap</b>
+      Misalnya <code>Documents\UINSU Google Scholar Insight</code>. Chrome membaca ekstensi langsung dari folder itu setiap kali dibuka, jadi jangan menaruhnya di folder Downloads yang sering dibersihkan. Halaman yang sedang Anda baca ini berada di dalam folder tersebut.</li>
+    <li><b>Buka halaman ekstensi</b>
+      Ketik <code>chrome://extensions</code> di kolom alamat lalu tekan Enter. Di Microsoft Edge alamatnya <code>edge://extensions</code>.</li>
+    <li><b>Nyalakan Developer mode</b>
+      Tombol gesernya ada di pojok kanan atas halaman. Di Edge letaknya di sisi kiri bawah. Setelah menyala, muncul satu baris tombol baru.</li>
+    <li><b>Klik Load unpacked, lalu pilih folder hasil ekstrak</b>
+      Pilih folder yang di dalamnya langsung terlihat berkas <code>manifest.json</code>. Bila yang terpilih folder induknya, Chrome menolak dengan pesan bahwa manifest tidak ditemukan.
+      <div class="mock">
+        <div class="addr"><i></i><i></i><i></i><span>chrome://extensions</span></div>
+        <div class="row"><b>Extensions</b><span class="tog hl">Developer mode <em></em><span class="tag">3</span></span></div>
+        <div class="row"><span class="pill hl">Load unpacked<span class="tag">4</span></span><span class="pill">Pack extension</span><span class="pill">Update</span></div>
+        <div class="ext"><img src="icons/icon128.png" alt="" /><div><b>UINSU Google Scholar Insight</b><span class="small">Peringkat SINTA, Scopus, dan DOAJ di Google Scholar</span></div></div>
+      </div>
+      <span class="small">Ilustrasi halaman ekstensi. Angka menunjukkan nomor langkah. Pada Chrome berbahasa Indonesia nama tombolnya diterjemahkan, tetapi letaknya sama.</span></li>
+    <li><b>Sematkan ikon ke bilah alat</b>
+      Klik ikon kepingan puzzle di kanan kolom alamat, cari UINSU Google Scholar Insight, lalu klik ikon pin. Ikon hijau bertuliskan GS sekarang selalu terlihat.</li>
+    <li><b>Buka sebuah profil Google Scholar</b>
+      Laman awal ekstensi terbuka sendiri setelah pemasangan. Lanjutkan dengan membuka profil Google Scholar: badge peringkat muncul di bawah tiap judul, dan tombol Buka dasbor ada di atas daftar publikasi.</li>
+  </ol>
+
+  <div class="note"><b>Peringatan mode pengembang.</b> Chrome kadang menampilkan pesan tentang ekstensi mode pengembang saat baru dibuka. Itu wajar untuk ekstensi yang dipasang dari folder. Tutup saja pesannya dan jangan pilih opsi untuk menonaktifkan ekstensi.</div>
+  <div class="note warn"><b>Jangan mengubah isi folder.</b> Ekstensi memeriksa keutuhan berkasnya setiap kali dijalankan. Bila ada berkas yang diubah, dihapus, atau rusak, ekstensi berhenti bekerja dan meminta dipasang ulang.</div>
+
+  <h2>Memperbarui ke versi baru</h2>
+  <p>Ekstrak versi baru dan timpa isi folder lama. Buka <code>chrome://extensions</code>, klik ikon panah melingkar pada kartu ekstensi, lalu muat ulang tab Google Scholar. Data yang tersimpan tetap ada selama foldernya sama.</p>
+
+  <h2>Bila tidak berhasil</h2>
+  <p><b>Chrome menolak folder.</b> Folder yang dipilih belum tepat. Pilih folder yang langsung berisi <code>manifest.json</code>.</p>
+  <p><b>Badge tidak muncul.</b> Muat ulang halaman Google Scholar, dan pastikan ekstensi dalam keadaan aktif di <code>chrome://extensions</code>.</p>
+  <p><b>Ekstensi hilang setelah beberapa waktu.</b> Foldernya terpindah atau terhapus. Ekstrak ulang ke folder tetap dan ulangi langkah 2 sampai 4.</p>
+  <p>Panduan penggunaan lengkap tersedia di dalam ekstensi, lewat tautan Panduan di bagian bawah dasbor.</p>
+</div>
+<footer><div class="wrap"><b>UINSU Google Scholar Insight</b> · Dibuat oleh Muhammad Ikhsan, UIN Sumatera Utara Medan</div></footer>
+</body>
+</html>

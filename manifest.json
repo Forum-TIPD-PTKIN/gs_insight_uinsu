@@ -1,0 +1,88 @@
+{
+  "manifest_version": 3,
+  "name": "UINSU Google Scholar Insight",
+  "short_name": "Scholar Insight",
+  "version": "3.3.3",
+  "author": "Muhammad Ikhsan",
+  "description": "Peringkat SINTA, Scopus, dan DOAJ serta analitik publikasi di Google Scholar. Dibuat oleh Muhammad Ikhsan, UIN Sumatera Utara Medan.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9khSdqlOPiYUBl7Ve4/UKO3tPEFccsHAwHMuTOThPVK/9WLLFM074dovyXChZEgG00+gkI40SLGZ8cR75Zq41r0GpjD1nveXy7pUHkDLf2/8lsWih8E71lQpL+aU+t8ieI9nrqFukX5EuRAVlYyQYvSJ4Kfkx2OVpcoyjADPJC4fK1C9h4HXT0D1XtYYU5+QQAorkWz2oKsjDoUi4uHTJJW5cxfV+ZqMS3D7r8MzRS6n3oVdfYvIaiIWzbAamalDTs1pKoJNX1RQWP4x5ekTMoCDzDvvYqie1JkH7o9N9Lq8ksD+gcUiDUdg71fhLP64I1I5bRWbWu6k0BfbEPKRtQIDAQAB",
+  "minimum_chrome_version": "116",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "storage",
+    "sidePanel",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "https://scholar.google.com/*",
+    "https://scholar.google.co.id/*",
+    "https://api.crossref.org/*",
+    "https://api.openalex.org/*",
+    "https://gs-insight.uinsu.ac.id/*"
+  ],
+  "background": {
+    "service_worker": "sw.js"
+  },
+  "action": {
+    "default_title": "UINSU Google Scholar Insight — buka dasbor",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "side_panel": {
+    "default_path": "panel/panel.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://scholar.google.com/citations*",
+        "https://scholar.google.co.id/citations*"
+      ],
+      "js": [
+        "lib/brand.js",
+        "lib/ui.js",
+        "lib/analytics.js",
+        "content/common.js",
+        "content/profile.js"
+      ],
+      "css": [
+        "content/content.css"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://scholar.google.com/scholar*",
+        "https://scholar.google.co.id/scholar*"
+      ],
+      "js": [
+        "lib/brand.js",
+        "lib/ui.js",
+        "lib/analytics.js",
+        "content/common.js",
+        "content/search.js"
+      ],
+      "css": [
+        "content/content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/logo-uinsu.png"
+      ],
+      "matches": [
+        "https://scholar.google.com/*",
+        "https://scholar.google.co.id/*"
+      ]
+    }
+  ]
+}

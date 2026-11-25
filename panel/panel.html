@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UINSU Google Scholar Insight</title>
+  <link rel="stylesheet" href="../content/content.css" />
+  <link rel="stylesheet" href="panel.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <img class="logo" src="../icons/logo-uinsu-putih.png" alt="UINSU" />
+      <div>
+        <div class="brand-name">Google Scholar Insight</div>
+        <div class="brand-sub">Universitas Islam Negeri Sumatera Utara</div>
+      </div>
+    </div>
+    <div class="top-meta" id="db-meta"></div>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Bagian dasbor">
+    <button role="tab" data-view="ringkasan" aria-selected="true">Ringkasan</button>
+    <button role="tab" data-view="publikasi">Publikasi</button>
+    <button role="tab" data-view="kualitas">Kualitas</button>
+    <button role="tab" data-view="target">Target</button>
+    <button role="tab" data-view="finder">Cari Jurnal</button>
+    <button role="tab" data-view="banding">Bandingkan</button>
+    <button role="tab" data-view="pengaturan">Pengaturan</button>
+  </nav>
+
+  <main id="view" tabindex="-1"></main>
+
+  <footer class="foot"><b data-credit="line"></b><br />Data SINTA, SciMago/Scopus, DOAJ, stop-predatory-journals · <a href="../docs/panduan.html" target="_blank">Panduan</a></footer>
+
+  <script src="../lib/brand.js"></script>
+  <script src="../lib/ui.js"></script>
+  <script src="../lib/analytics.js"></script>
+  <script src="../lib/widgets.js"></script>
+  <script src="../lib/cite.js"></script>
+  <script src="../lib/xlsx.js"></script>
+  <script src="panel.js"></script>
+</body>
+</html>

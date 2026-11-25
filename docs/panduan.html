@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panduan — UINSU Google Scholar Insight</title>
+  <link rel="icon" href="../icons/icon48.png" />
+  <link rel="stylesheet" href="../welcome/site.css" />
+</head>
+<body>
+  <header class="doc-head">
+    <div class="wrap">
+      <img src="../icons/logo-uinsu-putih.png" alt="Logo UINSU" />
+      <div><b>Panduan Google Scholar Insight</b><span>Universitas Islam Negeri Sumatera Utara · <span data-version>Versi</span></span></div>
+      <a href="../welcome/welcome.html">Laman awal</a>
+    </div>
+  </header>
+
+  <div class="wrap doc">
+    <nav aria-label="Daftar isi">
+      <a href="#fitur">Fitur utama</a>
+      <a href="#pasang">Memasang ekstensi</a>
+      <a href="#mulai">Mulai cepat</a>
+      <a href="#badge">Arti badge</a>
+      <a href="#detail">Detail dan keyakinan</a>
+      <a href="#ambigu">Jurnal ambigu</a>
+      <a href="#verifikasi">Verifikasi online</a>
+      <a href="#rapikan">Merapikan profil</a>
+      <a href="#cek">Cek sebelum submit</a>
+      <a href="#dasbor">Dasbor</a>
+      <a href="#ekspor">Ekspor dan laporan</a>
+      <a href="#privasi">Privasi</a>
+      <a href="#batasan">Batasan data</a>
+      <a href="#kendala">Kendala umum</a>
+      <a href="#tentang">Tentang</a>
+    </nav>
+
+    <article>
+      <h2 id="fitur">Fitur utama</h2>
+      <p>Google Scholar menampilkan daftar publikasi dan sitasi, tetapi tidak memberi tahu di jurnal peringkat berapa sebuah artikel terbit. Ekstensi ini menambahkan informasi itu, lalu mengolahnya menjadi gambaran utuh sebuah profil.</p>
+      <div class="hl">
+        <div><b>Peringkat di tiap publikasi</b>SINTA, Scopus, dan DOAJ tampil langsung di profil dan hasil pencarian.</div>
+        <div><b>Merapikan profil</b>Artikel yang bukan milik Anda dan entri ganda dicentangkan, Anda tinggal menghapus atau menggabungkan.</div>
+        <div><b>Dasbor analitik</b>Metrik lengkap, simulasi h-index, riwayat sitasi, dan rekap kategori publikasi.</div>
+        <div><b>Cek sebelum submit</b>Penilaian cepat sebuah jurnal lewat nama, ISSN, atau klik kanan.</div>
+        <div><b>Pencocokan yang jujur</b>Setiap hasil punya tingkat keyakinan, dan bisa dipastikan lewat DOI.</div>
+        <div><b>Sitasi siap salin</b>APA, IEEE, dan BibTeX untuk tiap publikasi.</div>
+        <div><b>Pencari jurnal</b>Puluhan ribu jurnal, bisa disaring menurut peringkat dan biaya.</div>
+        <div><b>Rekap dan ekspor</b>Daftar pantau program studi, ekspor Excel, CSV, dan laporan PDF.</div>
+      </div>
+
+      <h2 id="pasang">Memasang ekstensi</h2>
+      <p>Ekstensi dibagikan dalam bentuk berkas ZIP dan dipasang lewat mode pengembang. Yang dibutuhkan hanya Google Chrome atau Microsoft Edge versi 116 atau lebih baru di komputer atau laptop. Ekstensi tidak berjalan di ponsel.</p>
+      <ol>
+        <li><b>Ekstrak berkas ZIP ke folder yang tetap.</b> Misalnya <code>Documents\UINSU Google Scholar Insight</code>. Chrome membaca ekstensi langsung dari folder itu setiap kali dibuka, jadi jangan menaruhnya di folder Downloads yang sering dibersihkan.</li>
+        <li><b>Buka halaman ekstensi.</b> Ketik <code>chrome://extensions</code> di kolom alamat lalu tekan Enter. Di Microsoft Edge alamatnya <code>edge://extensions</code>.</li>
+        <li><b>Nyalakan Developer mode.</b> Tombol gesernya ada di pojok kanan atas halaman (di Edge letaknya di sisi kiri bawah). Setelah menyala, muncul satu baris tombol baru.</li>
+        <li><b>Klik Load unpacked.</b> Pilih folder hasil ekstrak, yaitu folder yang di dalamnya langsung terlihat berkas <code>manifest.json</code>. Bila yang terpilih folder induknya, Chrome menolak dengan pesan bahwa manifest tidak ditemukan.</li>
+        <li><b>Sematkan ikon ke bilah alat.</b> Klik ikon kepingan puzzle di kanan kolom alamat, cari UINSU Google Scholar Insight, lalu klik ikon pin. Ikon hijau bertuliskan GS sekarang selalu terlihat.</li>
+        <li><b>Buka sebuah profil Google Scholar.</b> Badge peringkat muncul di bawah tiap judul. Pemasangan selesai.</li>
+      </ol>
+      <div class="note"><b>Peringatan mode pengembang.</b> Chrome kadang menampilkan pesan tentang ekstensi mode pengembang saat baru dibuka. Itu wajar untuk ekstensi yang dipasang dari folder. Tutup saja pesannya dan jangan pilih opsi untuk menonaktifkan ekstensi.</div>
+      <h3>Memperbarui ke versi baru</h3>
+      <ol>
+        <li>Ekstrak versi baru, lalu timpa isi folder lama dengan isi folder baru.</li>
+        <li>Buka <code>chrome://extensions</code> dan klik ikon panah melingkar pada kartu UINSU Google Scholar Insight.</li>
+        <li>Muat ulang tab Google Scholar yang sedang terbuka.</li>
+      </ol>
+      <p>Selama foldernya sama dan ekstensi tidak dihapus, pilihan jurnal, target, riwayat, dan profil yang tersimpan tetap ada.</p>
+      <div class="note warn"><b>Jangan mengubah isi folder.</b> Ekstensi memeriksa keutuhan berkasnya setiap kali dijalankan. Bila ada berkas yang diubah, dihapus, atau rusak, ekstensi berhenti bekerja dan meminta dipasang ulang.</div>
+      <h3>Mencopot ekstensi</h3>
+      <p>Klik <b>Remove</b> pada kartu ekstensi di halaman <code>chrome://extensions</code>. Semua data yang disimpan ekstensi di browser ikut terhapus.</p>
+
+      <h2 id="mulai">Mulai cepat</h2>
+      <ol>
+        <li>Buka sebuah profil Google Scholar. Alamatnya berbentuk <code>scholar.google.com/citations?user=...</code></li>
+        <li>Tunggu beberapa detik. Ekstensi menekan tombol “Tampilkan lainnya” sampai semua publikasi termuat, lalu memasang badge di bawah tiap judul.</li>
+        <li>Baca bilah ringkasan di atas daftar publikasi. Klik salah satu kotak peringkat untuk menyaring daftar, klik lagi untuk mengembalikannya.</li>
+        <li>Klik badge untuk melihat detail jurnal.</li>
+        <li>Klik <b>Buka dasbor</b> atau ikon ekstensi di bilah alat. Dasbor terbuka di panel samping.</li>
+      </ol>
+      <p>Badge juga muncul di halaman hasil pencarian Google Scholar, di bawah baris penulis dan nama jurnal.</p>
+
+      <h2 id="badge">Arti badge</h2>
+      <div class="tbl"><table>
+        <tr><th>Badge</th><th>Arti</th></tr>
+        <tr><td><span class="chip s1">S1</span> <span class="chip s2">S2</span> <span class="chip s3">S3</span> <span class="chip s4">S4</span> <span class="chip s5">S5</span> <span class="chip s6">S6</span></td><td>Peringkat akreditasi SINTA. Makin gelap warnanya, makin tinggi peringkatnya.</td></tr>
+        <tr><td><span class="chip q1">Q1</span> <span class="chip q2">Q2</span> <span class="chip q3">Q3</span> <span class="chip q4">Q4</span></td><td>Kuartil jurnal di Scopus menurut SciMago. Q1 adalah seperempat teratas di bidangnya.</td></tr>
+        <tr><td><span class="chip doaj">DOAJ</span></td><td>Jurnal akses terbuka yang terdaftar di Directory of Open Access Journals.</td></tr>
+        <tr><td><span class="chip diamond">DOAJ · tanpa APC</span></td><td>Terdaftar di DOAJ dan tidak memungut biaya publikasi dari penulis.</td></tr>
+        <tr><td><span class="chip s2 cek">S2</span></td><td>Garis putus-putus dan tanda tanya berarti kecocokan nama jurnal belum pasti.</td></tr>
+        <tr><td><span class="chip amb">Ambigu · 5 jurnal</span></td><td>Ada beberapa jurnal dengan nama yang sama. Anda yang memilih.</td></tr>
+        <tr><td><span class="chip warnc">Terindikasi predator</span></td><td>Nama jurnal, penerbit, atau domainnya ada di daftar jurnal yang diragukan.</td></tr>
+        <tr><td><span class="chip type">Prosiding</span> <span class="chip type">Buku</span> <span class="chip type">Preprint</span></td><td>Bukan artikel jurnal, jadi tidak diberi peringkat.</td></tr>
+      </table></div>
+      <p>Publikasi tanpa badge berarti nama terbitannya tidak ditemukan di basis data, atau Scholar tidak mencatat tempat terbitnya.</p>
+
+      <h2 id="detail">Detail jurnal dan tingkat keyakinan</h2>
+      <p>Klik badge untuk membuka kartu detail. Isinya bergantung pada sumber yang mencatat jurnal tersebut:</p>
+      <ul>
+        <li><b>SINTA:</b> peringkat, lembaga pengelola, dan tautan ke profil jurnal di SINTA.</li>
+        <li><b>Scopus:</b> kuartil, nilai SJR, H-index jurnal, urutan di SciMago, dan status pengindeksan.</li>
+        <li><b>DOAJ:</b> lisensi, biaya publikasi (APC), perkiraan lama review, dan negara penerbit.</li>
+        <li><b>ISSN</b> cetak dan elektronik.</li>
+      </ul>
+      <p>Jurnal yang dihentikan Scopus tampil dengan badge Scopus yang dicoret. Bila SciMago tidak lagi memberinya kuartil, badge itu tidak memuat angka Q dan artikelnya tidak dihitung sebagai publikasi Scopus.</p>
+      <p>Jurnal berstatus <i>discontinued</i> sudah dihentikan pengindeksannya oleh Scopus. Artikel lama tetap tercatat, tetapi jurnal itu sebaiknya tidak dipilih untuk naskah baru.</p>
+      <div class="tbl"><table>
+        <tr><th>Keyakinan</th><th>Kapan muncul</th><th>Yang perlu dilakukan</th></tr>
+        <tr><td><b>Pasti</b></td><td>Nama jurnal sama persis dengan basis data, atau sudah dipastikan lewat ISSN.</td><td>Tidak ada.</td></tr>
+        <tr><td><b>Kuat</b></td><td>Nama cocok setelah penyesuaian kecil, misalnya singkatan baku atau nama yang terpotong.</td><td>Umumnya benar. Verifikasi bila akan dipakai di laporan.</td></tr>
+        <tr><td><b>Perlu dicek</b></td><td>Nama hanya mirip. Badge diberi tanda tanya.</td><td>Cocokkan ISSN di kartu detail, atau jalankan verifikasi online.</td></tr>
+      </table></div>
+
+      <h2 id="ambigu">Memilih jurnal saat ambigu</h2>
+      <p>Banyak jurnal Indonesia memakai nama yang sama. “Jurnal Informatika”, misalnya, adalah nama lima jurnal berbeda dengan peringkat SINTA 3 sampai SINTA 5. Ekstensi tidak menghitung publikasi itu ke peringkat mana pun sampai Anda memilih.</p>
+      <ol>
+        <li>Klik badge Ambigu.</li>
+        <li>Bandingkan lembaga pengelola dan ISSN tiap pilihan dengan jurnal tempat artikel terbit.</li>
+        <li>Klik pilihan yang benar, atau <b>Bukan salah satunya</b> bila tidak ada yang cocok.</li>
+      </ol>
+      <p>Pilihan disimpan dan dipakai lagi setiap kali nama jurnal yang sama muncul. Semua pilihan manual bisa dihapus dari tab Pengaturan.</p>
+
+      <h2 id="verifikasi">Verifikasi online</h2>
+      <p>Ekstensi mencari artikel di Crossref berdasarkan judulnya. Bila ditemukan, Crossref mengembalikan DOI dan ISSN jurnal tempat artikel terbit. ISSN itu yang dicocokkan dengan basis data, sehingga hasilnya tidak lagi bergantung pada nama jurnal.</p>
+      <div class="tbl"><table>
+        <tr><th>Cakupan</th><th>Tombol</th></tr>
+        <tr><td>Satu publikasi</td><td><b>Verifikasi online</b> di kartu detail jurnal.</td></tr>
+        <tr><td>Yang belum pasti saja</td><td><b>Verifikasi online</b> di bilah ringkasan, atau <b>Verifikasi yang belum pasti</b> di tab Ringkasan.</td></tr>
+        <tr><td>Seluruh publikasi</td><td><b>Verifikasi semua</b> di tab Ringkasan.</td></tr>
+      </table></div>
+      <ul>
+        <li>Hasil disimpan 30 hari, jadi publikasi yang sama tidak diperiksa berulang.</li>
+        <li>Hanya berhasil untuk artikel yang punya DOI terdaftar di Crossref.</li>
+        <li>Yang dikirim hanya judul artikel ke api.crossref.org dan DOI ke api.openalex.org.</li>
+      </ul>
+
+      <h2 id="rapikan">Merapikan profil</h2>
+      <p>Google Scholar kadang memasukkan artikel orang lain yang namanya mirip ke profil Anda, atau mencatat satu artikel dua kali. Ekstensi membantu menemukannya dan mencentangkannya di tabel Scholar. Menghapus dan menggabungkan tetap Anda lakukan sendiri.</p>
+      <h3>Menghapus artikel yang bukan milik Anda</h3>
+      <ol>
+        <li>Masuk ke akun Google Anda, lalu buka profil Scholar Anda sendiri. Kotak centang di kiri tiap artikel hanya muncul bagi pemilik profil.</li>
+        <li>Di bilah ringkasan, klik kotak <span class="chip amb">Mungkin bukan milik pemilik profil</span>. Daftar menyempit ke artikel yang nama Anda tidak ada di daftar penulisnya.</li>
+        <li>Klik <b>Centang yang tampil</b>. Semua artikel itu tercentang dan diberi garis kuning.</li>
+        <li>Periksa satu per satu. Lepas centang pada artikel yang ternyata milik Anda.</li>
+        <li>Tekan tombol <b>Hapus</b> milik Google Scholar di atas tabel.</li>
+      </ol>
+      <p>Langkah yang sama tersedia dari dasbor, di tab Kualitas, lewat tombol <b>Centang semuanya di Scholar</b>.</p>
+      <h3>Mengajari ekstensi variasi nama Anda</h3>
+      <p>Bila nama Anda ditulis berbeda di sebagian artikel, misalnya memakai marga, nama tengah, atau ejaan lain, tambahkan variasinya pada kotak <b>variasi nama</b> di tab Kualitas. Pisahkan dengan koma, lalu klik <b>Simpan variasi nama</b>. Artikel yang memuat salah satu variasi itu langsung keluar dari daftar. Variasi nama disimpan per profil di browser Anda.</p>
+      <div class="note warn"><b>Selalu periksa sebelum menghapus.</b> Pendeteksian memakai kecocokan nama. Artikel Anda sendiri bisa ikut terdaftar bila nama Anda ditulis berbeda, misalnya memakai marga atau ejaan lain. Artikel dengan daftar penulis terpotong tidak pernah ditandai. Artikel yang terhapus masih bisa dipulihkan dari menu Sampah di Scholar.</div>
+      <h3>Menggabungkan entri ganda</h3>
+      <p>Di tab Kualitas, bagian Kemungkinan duplikat, klik <b>Centang untuk digabung</b> pada sebuah judul. Kedua entri tercentang di halaman Scholar. Tekan tombol <b>Gabungkan</b> milik Scholar agar sitasinya menjadi satu.</p>
+
+      <h2 id="cek">Cek sebelum submit</h2>
+      <p>Buka tab Cari Jurnal, tulis nama jurnal atau ISSN pada kartu <b>Cek sebelum submit</b>, lalu klik <b>Cek</b>. Bisa juga dari halaman mana pun: blok nama jurnal atau ISSN, klik kanan, lalu pilih <b>Cek jurnal di Scholar Insight</b>.</p>
+      <div class="tbl"><table>
+        <tr><th>Hasil</th><th>Arti</th></tr>
+        <tr><td><b>Layak dipertimbangkan</b></td><td>Terindeks Scopus yang masih aktif atau terakreditasi SINTA, tanpa tanda bahaya.</td></tr>
+        <tr><td><b>Perlu diperiksa lebih lanjut</b></td><td>Tidak ditemukan di basis data, nama dipakai beberapa jurnal, hanya terdaftar di DOAJ, atau kecocokan nama belum pasti.</td></tr>
+        <tr><td><b>Sebaiknya dihindari</b></td><td>Terindikasi predator atau sudah dihentikan pengindeksannya oleh Scopus.</td></tr>
+      </table></div>
+      <p>Memakai ISSN selalu lebih pasti daripada nama. Penilaian ini bantuan awal, bukan pengganti membaca ruang lingkup dan pedoman penulis jurnal.</p>
+
+      <h2 id="dasbor">Dasbor</h2>
+      <p>Dasbor terbuka di panel samping dan isinya mengikuti tab browser yang sedang aktif.</p>
+
+      <h3>Ringkasan</h3>
+      <div class="tbl"><table>
+        <tr><th>Metrik</th><th>Arti</th></tr>
+        <tr><td>h-index</td><td>Ada h publikasi yang masing-masing disitasi paling sedikit h kali.</td></tr>
+        <tr><td>g-index</td><td>Seperti h-index, tetapi memberi bobot lebih pada publikasi yang sitasinya sangat tinggi.</td></tr>
+        <tr><td>i10-index</td><td>Jumlah publikasi dengan sedikitnya 10 sitasi.</td></tr>
+        <tr><td>h5-index</td><td>h-index yang dihitung dari publikasi lima tahun terakhir saja.</td></tr>
+        <tr><td>m-quotient</td><td>h-index dibagi lama berkarya dalam tahun.</td></tr>
+      </table></div>
+      <ul>
+        <li><b>Menuju h-index berikutnya.</b> Menunjukkan artikel mana yang paling dekat mengangkat h-index, dan berapa sitasi lagi yang dibutuhkan.</li>
+        <li><b>Riwayat profil.</b> Setiap kali profil dibuka sampai habis, ekstensi mencatat satu potret per hari. Dari potret itu terlihat pertumbuhan sitasi dan h-index.</li>
+        <li><b>Rekap kategori publikasi.</b> Jumlah artikel di jurnal internasional bereputasi, jurnal nasional terakreditasi per kelompok SINTA, prosiding, dan buku. Sifatnya indikatif, bukan penilaian BKD atau angka kredit.</li>
+      </ul>
+      <p>Selain itu ada sebaran peringkat SINTA dan Scopus, grafik publikasi per tahun, jenis terbitan, peran kepenulisan, dan kolaborator tersering. Angka dihitung dari publikasi yang tampil di halaman, sehingga selisih kecil dengan angka resmi Scholar wajar.</p>
+
+      <h3>Publikasi</h3>
+      <p>Daftar lengkap dengan kotak pencarian, saringan (per peringkat, jenis terbitan, peran kepenulisan, atau yang perlu dicek), dan urutan (sitasi terbanyak, terbaru, peringkat terbaik). Klik judul untuk menuju publikasi itu di halaman Scholar.</p>
+      <p>Tombol <b>Sitasi</b> di tiap publikasi menampilkan format APA, IEEE, dan BibTeX yang bisa langsung disalin. Bila artikel sudah diverifikasi dan punya DOI, volume dan halaman dilengkapi dari Crossref. Untuk artikel seperti itu juga muncul tautan <b>PDF akses terbuka</b> bila tersedia.</p>
+
+      <h3>Kualitas</h3>
+      <div class="tbl"><table>
+        <tr><th>Pemeriksaan</th><th>Tindak lanjut</th></tr>
+        <tr><td>Kemungkinan bukan milik pemilik profil</td><td>Lihat bagian Merapikan profil.</td></tr>
+        <tr><td>Artikel ditarik (retracted)</td><td>Jangan dikutip tanpa memeriksa halaman penerbit. Hanya terdeteksi pada artikel yang sudah diverifikasi online.</td></tr>
+        <tr><td>Terindikasi predator</td><td>Periksa sendiri jurnalnya. Daftar predator bersifat indikatif.</td></tr>
+        <tr><td>Scopus discontinued</td><td>Hindari jurnal itu untuk naskah berikutnya.</td></tr>
+        <tr><td>Kemungkinan duplikat</td><td>Klik Centang untuk digabung, lalu tekan Gabungkan di halaman Scholar.</td></tr>
+        <tr><td>Nama jurnal ambigu</td><td>Pilih jurnal yang benar lewat badge.</td></tr>
+        <tr><td>Kecocokan perlu dicek</td><td>Jalankan verifikasi online.</td></tr>
+        <tr><td>Tanpa tahun, tanpa nama terbitan</td><td>Lengkapi entri di Scholar lewat tombol Edit.</td></tr>
+      </table></div>
+
+      <h3>Target</h3>
+      <p>Tuliskan syarat publikasi yang sedang dikejar, lalu ekstensi menghitung publikasi yang memenuhinya. Target bawaan hanya contoh. Sesuaikan dengan pedoman yang berlaku untuk Anda.</p>
+      <ol>
+        <li>Isi nama target dan jumlah minimal artikel.</li>
+        <li>Pilih batas kuartil Scopus dan batas peringkat SINTA. Artikel yang memenuhi salah satunya ikut dihitung.</li>
+        <li>Bila perlu, batasi tahun terbit dan centang syarat penulis pertama.</li>
+        <li>Klik <b>Simpan target</b>.</li>
+      </ol>
+      <p>Status <b>Terpenuhi bila terverifikasi</b> berarti jumlahnya cukup, tetapi sebagian masih perlu dicek atau ambigu. Hanya artikel jurnal yang dihitung.</p>
+
+      <h3>Cari Jurnal</h3>
+      <p>Di bawah kartu Cek sebelum submit ada pencarian jurnal. Bisa dipakai tanpa membuka profil Scholar. Ketik kata kunci bidang atau ISSN, pilih peringkat yang dituju, dan centang <b>Tanpa biaya publikasi</b> bila perlu. Hasil diurutkan dari kuartil dan peringkat SJR terbaik, dilengkapi biaya, lisensi, lama review, dan tautan ke situs jurnal, SINTA, DOAJ, serta SciMago.</p>
+      <div class="note">Biaya dan lama review berasal dari data yang dilaporkan jurnal ke DOAJ. Periksa lagi di situs jurnal sebelum mengirim naskah.</div>
+
+      <h3>Bandingkan</h3>
+      <p>Buka sebuah profil lalu klik <b>Simpan profil ini</b>. Ulangi untuk profil lain. Tabel bisa diurutkan dengan mengklik judul kolom dan diunduh sebagai berkas Excel. Angka di tabel adalah keadaan saat profil terakhir disimpan.</p>
+      <p><b>Daftar pantau</b> berguna untuk merekap banyak profil, misalnya seluruh dosen satu program studi. Tempel alamat atau ID profil Scholar, satu per baris, beri nama kelompok, lalu klik <b>Tambahkan</b>. Buka profil-profil itu satu per satu lewat tautan yang muncul. Setiap profil tersimpan otomatis begitu selesai dimuat, dan kartu Rekap menjumlahkannya per kelompok.</p>
+      <div class="note">Buka profil dengan jeda. Membuka puluhan profil berturut-turut bisa memicu captcha Google Scholar.</div>
+
+      <h3>Pengaturan</h3>
+      <ul>
+        <li><b>Tampilkan badge di halaman Scholar.</b> Matikan bila ingin halaman tampil polos.</li>
+        <li><b>Muat semua publikasi otomatis.</b> Bila dimatikan, hanya publikasi yang sudah tampil yang dianalisis.</li>
+        <li><b>Tema dasbor.</b> Terang, gelap, atau mengikuti sistem.</li>
+        <li><b>Hapus pilihan manual</b> dan <b>Hapus cache verifikasi.</b></li>
+        <li><b>Basis data.</b> Jumlah jurnal dan tanggal tiap sumber data.</li>
+        <li><b>Pembaruan online.</b> Sepekan sekali ekstensi memeriksa server kampus dan mengunduh basis data jurnal yang lebih baru. Berkas hanya dipakai bila tanda tangan digitalnya sah. Tombol <b>Periksa sekarang</b> menjalankannya saat itu juga, dan pilihan <b>Perbarui basis data otomatis</b> bisa dimatikan.</li>
+      </ul>
+
+      <h2 id="ekspor">Ekspor dan laporan</h2>
+      <p><b>Ekspor Excel (.xlsx)</b> di tab Ringkasan mengunduh dua lembar: daftar publikasi (jurnal hasil pencocokan, ISSN, peringkat SINTA, kuartil Scopus, SJR, kategori, biaya publikasi, tingkat keyakinan, DOI) dan ringkasan metrik. <b>Ekspor CSV</b> memuat daftar publikasi yang sama dalam bentuk teks.</p>
+      <p><b>Laporan PDF</b> membuka laporan di tab baru. Klik <b>Cetak / simpan sebagai PDF</b>, lalu pilih tujuan <i>Save as PDF</i> pada jendela cetak. Selesaikan dulu badge ambigu dan yang perlu dicek sebelum mencetak.</p>
+
+      <h2 id="privasi">Privasi</h2>
+      <ul>
+        <li>Tidak ada pelacak atau analytics, dan ekstensi tidak punya server sendiri.</li>
+        <li>Pencocokan peringkat dan pencarian jurnal berjalan di browser, memakai basis data yang ikut terpasang.</li>
+        <li>Ekstensi hanya aktif di halaman Google Scholar.</li>
+        <li>Data keluar dari browser hanya pada dua tindakan: verifikasi online (judul artikel ke Crossref, DOI ke OpenAlex) dan tombol Sitasi untuk artikel ber-DOI (DOI ke Crossref).</li>
+        <li>Pembaruan online hanya mengunduh berkas dari server kampus. Tidak ada data profil atau publikasi yang dikirim; server hanya melihat alamat IP seperti saat membuka situs biasa.</li>
+        <li>Pemeriksaan pembaruan itu juga dipakai pengelola untuk menghitung jumlah pemasangan yang aktif. Yang ikut terkirim hanya nomor versi ekstensi dan keterangan apakah pemeriksaan berjalan otomatis atau lewat tombol. Tidak ada nomor pengenal pemasangan, nama, atau alamat profil. Hitungan ini berhenti bila pilihan <b>Perbarui basis data otomatis</b> dimatikan.</li>
+        <li>Pilihan jurnal, target, hasil verifikasi, riwayat profil, daftar pantau, dan profil tersimpan berada di penyimpanan browser Anda sendiri.</li>
+      </ul>
+
+      <h2 id="batasan">Batasan data</h2>
+      <div class="note warn"><b>Bukan rujukan resmi.</b> Untuk keperluan administrasi, pastikan lagi di portal SINTA dan Scopus.</div>
+      <ul>
+        <li>Peringkat mengikuti tanggal data yang tercantum di tab Pengaturan, dan bisa berbeda dari keadaan terbaru. Bila pembaruan online aktif, tanggal itu ikut maju setiap kali pengelola menerbitkan data baru.</li>
+        <li>Yang tampil adalah peringkat jurnal saat data diambil, bukan peringkat pada tahun artikel terbit.</li>
+        <li>Sebagian jurnal Scopus tidak punya ISSN di data sumber, dan beberapa jurnal tidak tercatat sama sekali.</li>
+        <li>Daftar predator bersifat indikatif.</li>
+        <li>Hasil bergantung pada kerapian profil Scholar itu sendiri.</li>
+      </ul>
+
+      <h2 id="kendala">Kendala umum</h2>
+      <div class="tbl"><table>
+        <tr><th>Gejala</th><th>Yang bisa dicoba</th></tr>
+        <tr><td>Badge tidak muncul</td><td>Muat ulang halaman. Pastikan ekstensi aktif dan pilihan “Tampilkan badge di halaman Scholar” menyala.</td></tr>
+        <tr><td>Dasbor menulis “Belum ada data”</td><td>Dasbor membaca tab yang sedang aktif. Pindah ke tab profil Scholar, atau muat ulang tab itu.</td></tr>
+        <tr><td>Jumlah publikasi lebih sedikit</td><td>Belum semua termuat. Klik “Tampilkan lainnya” sampai habis, atau nyalakan “Muat semua publikasi otomatis”.</td></tr>
+        <tr><td>Scholar meminta captcha</td><td>Terlalu banyak profil dibuka dalam waktu singkat. Beri jeda, dan matikan sementara pemuatan otomatis.</td></tr>
+        <tr><td>Peringkat jurnal keliru</td><td>Klik badge, pilih jurnal yang benar atau “Bukan salah satunya”. Bila tidak ada pilihan, jalankan verifikasi online.</td></tr>
+        <tr><td>Tombol Centang tidak mencentang apa pun</td><td>Kotak centang hanya ada bila Anda masuk sebagai pemilik profil. Masuk ke akun Google yang benar, lalu muat ulang halaman.</td></tr>
+        <tr><td>Menu klik kanan tidak muncul</td><td>Blok dulu nama jurnal atau ISSN di halaman, baru klik kanan. Bila tetap tidak ada, muat ulang ekstensi.</td></tr>
+        <tr><td>Verifikasi tidak menemukan artikel</td><td>Artikel belum punya DOI di Crossref. Peringkat tetap memakai pencocokan nama.</td></tr>
+        <tr><td>Muncul pesan bahwa berkas ekstensi telah diubah</td><td>Ada berkas ekstensi yang berubah atau rusak. Pasang ulang dari sumber resminya.</td></tr>
+      </table></div>
+
+      <h2 id="tentang">Tentang</h2>
+      <p><b data-credit="line"></b></p>
+      <p class="muted" data-version>Versi</p>
+      <p class="muted">Sumber data: SINTA Kemdiktisaintek, SciMago dan daftar sumber Scopus, DOAJ, serta stop-predatory-journals.</p>
+    </article>
+  </div>
+
+  <footer class="foot">
+    <div class="wrap"><b data-credit="text"></b><span><a href="../welcome/welcome.html">Laman awal</a></span></div>
+  </footer>
+
+  <script src="../lib/brand.js"></script>
+  <script src="../welcome/site.js"></script>
+</body>
+</html>

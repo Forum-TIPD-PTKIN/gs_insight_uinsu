@@ -1,0 +1,20 @@
+UINSU Google Scholar Insight
+Hak cipta (c) 2026 Muhammad Ikhsan, UIN Sumatera Utara Medan.
+Seluruh hak dilindungi.
+
+Ekstensi ini boleh dipasang, dipakai, dan dibagikan secara cuma-cuma dalam
+bentuk aslinya untuk keperluan akademik dan nonkomersial.
+
+Tidak diizinkan tanpa persetujuan tertulis dari pembuat:
+1. menghapus, menyembunyikan, atau mengganti nama pembuat dan identitas
+   aplikasi pada bagian mana pun;
+2. mengubah kode lalu menyebarkannya kembali, dengan nama yang sama maupun
+   nama lain;
+3. memakai ekstensi ini atau bagiannya untuk tujuan komersial.
+
+Data peringkat jurnal dihimpun dari sumber publik: SINTA Kemdiktisaintek,
+SciMago dan daftar sumber Scopus, DOAJ, serta stop-predatory-journals.
+Hak atas data tersebut tetap berada pada pemiliknya masing-masing.
+
+Ekstensi disediakan apa adanya, tanpa jaminan. Peringkat yang ditampilkan
+bukan rujukan resmi.
